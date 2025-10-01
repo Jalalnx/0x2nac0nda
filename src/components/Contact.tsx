@@ -93,12 +93,13 @@ export const Contact = () => {
                   </div>
                 </div>
 
+
                 {/* Social Links */}
                 <div className="mt-8 pt-6 border-t border-border">
                   <p className="text-sm text-muted-foreground mb-4">Connect</p>
                   <div className="flex gap-4">
                     <a
-                      href="https://linkedin.com/in/abdalla-mubarak"
+                      href="https://linkedin.com/in/0x2nac0nda"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors"
