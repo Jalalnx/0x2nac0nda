@@ -21,9 +21,7 @@ export const Footer = () => {
               <p className="text-sm text-muted-foreground">
                 © {currentYear} Abdalla Abdelrhman Mubarak. All rights reserved.
               </p>
-              <p className="text-xs text-muted-foreground mt-1">
-                Built with <Heart className="w-3 h-3 inline text-primary" /> and React
-              </p>
+              
             </div>
 
             {/* Right: Quick Links */}

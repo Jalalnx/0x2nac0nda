@@ -1,49 +1,74 @@
 import { Briefcase, GraduationCap } from "lucide-react";
 
-const experiences = [
+const experiences = 
+[
   {
-    title: "Senior Cyber Security Consultant",
-    company: "Independent Consultant",
-    location: "Riyadh, Saudi Arabia",
-    period: "2021 - Present",
-    type: "consulting",
-    description:
-      "Conducting comprehensive VAPT for organizations across Saudi Arabia. Specialized in web application security, API testing, mobile security assessments, and Active Directory penetration testing.",
-    achievements: [
-      "Led 50+ security assessments",
-      "Identified critical vulnerabilities in enterprise applications",
-      "Provided remediation guidance and security training",
-    ],
+    "title": "Cyber Security Consultant",
+    "company": "New Solutions",
+    "location": "Riyadh, Saudi Arabia",
+    "period": "Aug 2024 – Present",
+    "type": "consulting",
+    "description": "Perform various penetration testing services across web, API, mobile (iOS & Android), network, and Active Directory. Responsible for producing detailed security assessment reports.",
+    "achievements": [
+      "Executed penetration testing across multiple domains including web, API, mobile, and AD",
+      "Delivered comprehensive technical reports with remediation strategies",
+      "Enhanced client security posture through systematic vulnerability exploitation and reporting"
+    ]
   },
   {
-    title: "Security Trainer & Consultant",
-    company: "Various Institutions",
-    location: "Sudan",
-    period: "2019 - Present",
-    type: "training",
-    description:
-      "Delivering security awareness and technical training to universities, government institutions, and private organizations. Topics include VAPT, secure coding, and incident response.",
-    achievements: [
-      "Trained 200+ students and professionals",
-      "Developed custom training curriculum",
-      "Built hands-on labs for practical security testing",
-    ],
+    "title": "Security Consultant",
+    "company": "OISSG Consultancy",
+    "location": "Doha, Qatar",
+    "period": "Sep 2023 – Jul 2024",
+    "type": "consulting",
+    "description": "Conducted penetration testing services including web, API, mobile, network, and Active Directory. Performed internal and external testing, source code reviews, and technical reporting.",
+    "achievements": [
+      "Performed white box, black box, and gray box testing",
+      "Delivered actionable security reports with remediation recommendations",
+      "Conducted in-depth source code reviews for secure coding practices"
+    ]
   },
   {
-    title: "Penetration Tester",
-    company: "Security Firm",
-    location: "Sudan",
-    period: "2018 - 2021",
-    type: "consulting",
-    description:
-      "Performed black-box and white-box penetration testing for clients. Specialized in network security, wireless security, and social engineering assessments.",
-    achievements: [
-      "Executed 30+ penetration tests",
-      "Delivered detailed reports with remediation strategies",
-      "Improved client security posture significantly",
-    ],
+    "title": "Senior Cyber Security",
+    "company": "Kilotech Security",
+    "location": "Jeddah, Saudi Arabia",
+    "period": "Jan 2023 – Oct 2023",
+    "type": "full-time",
+    "description": "Performed penetration testing services (web, API, mobile, and Active Directory), source code reviews, and technical reporting. Also managed and authored website security-related content.",
+    "achievements": [
+      "Conducted vulnerability assessments on web/mobile apps, networks, and AD",
+      "Provided mitigation guidance for firewall configurations and OS hardening",
+      "Authored security content to raise awareness on best practices"
+    ]
   },
-];
+  {
+    "title": "Penetration Tester",
+    "company": "National Information Center",
+    "location": "Khartoum, Sudan",
+    "period": "Mar 2020 – Mar 2021",
+    "type": "government",
+    "description": "Performed penetration testing across web apps, APIs, mobile apps, networks, and AD. Conducted internal/external testing, OS/server hardening, and produced detailed reports.",
+    "achievements": [
+      "Discovered and reported vulnerabilities across multiple platforms",
+      "Implemented OS and server hardening for Linux and Windows",
+      "Delivered remediation-focused technical security reports"
+    ]
+  },
+  {
+    "title": "Cyber Security Trainer",
+    "company": "Afro-Tech Training Center",
+    "location": "Khartoum, Sudan",
+    "period": "Jun 2020 – Jul 2021",
+    "type": "training",
+    "description": "Provided foundational and advanced training in cybersecurity topics such as fundamentals, web application security, penetration testing, CTF challenges, and bug bounty practices.",
+    "achievements": [
+      "Trained students in cybersecurity fundamentals and penetration testing",
+      "Guided learners through CTF challenges for hands-on experience",
+      "Delivered a bug bounty course focusing on real-world vulnerability discovery"
+    ]
+  }
+]
+
 
 export const Experience = () => {
   return (

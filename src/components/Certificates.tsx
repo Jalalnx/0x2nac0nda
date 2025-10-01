@@ -3,60 +3,148 @@ import { Button } from "@/components/ui/button";
 
 const certificates = [
   {
-    title: "Offensive Security Certified Professional",
-    short: "OSCP",
-    issuer: "Offensive Security",
-    year: "2022",
-    id: "OS-XXXXX",
-    url: "#",
-    icon: "🎯",
+    "title": "OffSec Web Expert",
+    "short": "OSWE",
+    "issuer": "Offensive Security",
+    "year": "2023",
+    "id": "OSWE-XXXXX",
+    "url": "#",
+    "icon": "🌐"
   },
   {
-    title: "eLearnSecurity Junior Penetration Tester",
-    short: "eJPT",
-    issuer: "eLearnSecurity",
-    year: "2020",
-    id: "eJPT-XXXXX",
-    url: "#",
-    icon: "🛡️",
+    "title": "API Penetration Testing",
+    "short": "API-PT",
+    "issuer": "Self / Training",
+    "year": "2023",
+    "id": "",
+    "url": "#",
+    "icon": "🔗"
   },
   {
-    title: "Certified Ethical Hacker",
-    short: "CEH",
-    issuer: "EC-Council",
-    year: "2021",
-    id: "ECC-XXXXX",
-    url: "#",
-    icon: "⚔️",
+    "title": "Web Application Penetration Testing Extreme",
+    "short": "eWPTx",
+    "issuer": "eLearnSecurity",
+    "year": "2022",
+    "id": "",
+    "url": "#",
+    "icon": "💻"
   },
   {
-    title: "CompTIA Security+",
-    short: "Security+",
-    issuer: "CompTIA",
-    year: "2019",
-    id: "COMP-XXXXX",
-    url: "#",
-    icon: "🔒",
+    "title": "Hack The Box (HTB) Challenges",
+    "short": "HTB",
+    "issuer": "Hack The Box",
+    "year": "2021–2023",
+    "id": "",
+    "url": "#",
+    "icon": "🕹️"
   },
   {
-    title: "Web Application Penetration Testing",
-    short: "WAPT",
-    issuer: "INE Security",
-    year: "2021",
-    id: "INE-XXXXX",
-    url: "#",
-    icon: "🌐",
+    "title": "eLearnSecurity Mobile Application Penetration Tester",
+    "short": "eMAPT",
+    "issuer": "eLearnSecurity",
+    "year": "2022",
+    "id": "eMAPT-XXXXX",
+    "url": "#",
+    "icon": "📱"
   },
   {
-    title: "Mobile Application Security",
-    short: "MAS",
-    issuer: "Custom Training",
-    year: "2022",
-    id: "MAS-XXXXX",
-    url: "#",
-    icon: "📱",
+    "title": "Certified Red Team Operator",
+    "short": "CRTO",
+    "issuer": "Pentester Academy",
+    "year": "In Progress",
+    "id": "",
+    "url": "#",
+    "icon": "🔴"
   },
-];
+  {
+    "title": "Offensive Security Experienced Penetration Expert",
+    "short": "OSEP",
+    "issuer": "Offensive Security",
+    "year": "2022",
+    "id": "PEN-300",
+    "url": "#",
+    "icon": "🎯",
+    "description": "Completed PEN-300 (Evasion Techniques and Breaching Defenses) training, advancing skills in advanced penetration testing, evasive techniques, and bypassing enterprise security mechanisms."
+  },
+  {
+    "title": "Offensive Security Certified Professional",
+    "short": "OSCP",
+    "issuer": "Offensive Security",
+    "year": "2021",
+    "id": "PEN-200",
+    "url": "#",
+    "icon": "🎯",
+    "description": "Completed PEN-200 (PWK) training, enhancing expertise in ethical hacking and penetration testing through hands-on experience."
+  },
+  {
+    "title": "Certified Red Team Professional",
+    "short": "CRTP",
+    "issuer": "Pentester Academy",
+    "year": "2022",
+    "id": "",
+    "url": "#",
+    "icon": "🔴",
+    "description": "Completed Certified Red Team Professional training, deepening expertise in Active Directory exploitation in Windows environments through hands-on labs."
+  }
+]
+
+
+// [
+//   {
+//     title: "Offensive Security Certified Professional",
+//     short: "OSCP",
+//     issuer: "Offensive Security",
+//     year: "2022",
+//     id: "OS-XXXXX",
+//     url: "#",
+//     icon: "🎯",
+//   },
+//   {
+//     title: "eLearnSecurity Junior Penetration Tester",
+//     short: "eJPT",
+//     issuer: "eLearnSecurity",
+//     year: "2020",
+//     id: "eJPT-XXXXX",
+//     url: "#",
+//     icon: "🛡️",
+//   },
+//   {
+//     title: "Certified Ethical Hacker",
+//     short: "CEH",
+//     issuer: "EC-Council",
+//     year: "2021",
+//     id: "ECC-XXXXX",
+//     url: "#",
+//     icon: "⚔️",
+//   },
+//   {
+//     title: "CompTIA Security+",
+//     short: "Security+",
+//     issuer: "CompTIA",
+//     year: "2019",
+//     id: "COMP-XXXXX",
+//     url: "#",
+//     icon: "🔒",
+//   },
+//   {
+//     title: "Web Application Penetration Testing",
+//     short: "WAPT",
+//     issuer: "INE Security",
+//     year: "2021",
+//     id: "INE-XXXXX",
+//     url: "#",
+//     icon: "🌐",
+//   },
+//   {
+//     title: "Mobile Application Security",
+//     short: "MAS",
+//     issuer: "Custom Training",
+//     year: "2022",
+//     id: "MAS-XXXXX",
+//     url: "#",
+//     icon: "📱",
+//   },
+// ];
 
 export const Certificates = () => {
   return (
@@ -93,6 +181,7 @@ export const Certificates = () => {
                   <p>{cert.issuer}</p>
                   <p className="mono text-primary">{cert.year}</p>
                   <p className="mono text-xs">{cert.id}</p>
+                  <p className="text-justify text-foreground/80">{cert.description}</p>
                 </div>
 
                 <Button

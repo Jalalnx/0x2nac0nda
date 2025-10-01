@@ -1,51 +1,39 @@
 import { Trophy, Medal, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const ctfEvents = [
+const ctfEvents = 
+[
   {
-    name: "Black Hat MEA CTF",
-    year: "2024",
-    rank: "Top 15",
-    team: "0x2nac0nda",
-    points: 8500,
-    writeupUrl: "#",
+    "name": "Black Hat MEA CTF",
+    "year": "2022",
+    "rank": "63rd Place",
+    "team": "0x2nac0nda",
+    "points": null,
+    "writeupUrl": "#",
+    "description": "Competed against 250 teams from over 35 countries in Riyadh, Saudi Arabia."
   },
   {
-    name: "HackTheBox Championship",
-    year: "2023",
-    rank: "Top 25",
-    team: "Solo",
-    points: 7200,
-    writeupUrl: "#",
+    "name": "Sudan National Cybersecurity Competition",
+    "year": "2021",
+    "rank": "2nd Place",
+    "team": "0x2nac0nda",
+    "points": null,
+    "writeupUrl": "#",
+    "description": "Organized by Trend Micro and Cybertalents."
   },
   {
-    name: "picoCTF",
-    year: "2023",
-    rank: "Top 10",
-    team: "0x2nac0nda",
-    points: 9100,
-    writeupUrl: "#",
-  },
-  {
-    name: "SANS Holiday Hack Challenge",
-    year: "2023",
-    rank: "Completed",
-    team: "Solo",
-    points: 10000,
-    writeupUrl: "#",
-  },
-  {
-    name: "TryHackMe King of the Hill",
-    year: "2022",
-    rank: "Top 20",
-    team: "Solo",
-    points: 6800,
-    writeupUrl: "#",
-  },
-];
+    "name": "Sudan National Cybersecurity Competition",
+    "year": "2020",
+    "rank": "3rd Place",
+    "team": "0x2nac0nda",
+    "points": null,
+    "writeupUrl": "#",
+    "description": "Organized by Trend Micro and Cybertalents."
+  }
+]
 
 const recentRanks = [
-  { position: 1, event: "Black Hat MEA 2024", score: 8500 },
+  { position: 1, event: "Black Hat MEA CTF", score: 8500 },
   { position: 2, event: "HTB Championship 2023", score: 7200 },
   { position: 3, event: "picoCTF 2023", score: 9100 },
 ];
@@ -65,7 +53,7 @@ export const CTF = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Recent Top Ranks Widget */}
-            <div className="lg:col-span-1">
+            {/* <div className="lg:col-span-1">
               <div className="glow-card animate-fade-in-up sticky top-24">
                 <div className="flex items-center gap-2 mb-6">
                   <Trophy className="w-6 h-6 text-primary" />
@@ -99,10 +87,10 @@ export const CTF = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* CTF Events List */}
-            <div className="lg:col-span-2 space-y-6">
+            <div className="lg:col-span-3 space-y-6">
               {ctfEvents.map((event, index) => (
                 <div
                   key={index}
@@ -136,6 +124,7 @@ export const CTF = () => {
                           {event.points} pts
                         </span>
                       </div>
+                      <p className="mt-4 text-foreground/80">{event.description}</p>
                     </div>
 
                     <Button
