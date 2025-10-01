@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Cybersecurity Portfolio Design System - Dark Tech Aesthetic */
+
+@layer base {
+  :root {
+    /* Near-black backgrounds for depth */
+    --background: 0 0% 4%;
+    --background-elevated: 0 0% 6%;
+    --foreground: 0 0% 95%;
+
+    /* Card surfaces with subtle transparency */
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 95%;
+    --card-border: 142 71% 45% / 0.15;
+
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Neon matrix green - primary accent */
+    --primary: 142 71% 45%;
+    --primary-glow: 142 100% 50%;
+    --primary-foreground: 0 0% 4%;
+
+    /* Cyan/teal secondary */
+    --secondary: 180 100% 40%;
+    --secondary-foreground: 0 0% 95%;
+
+    /* Muted surfaces and text */
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 60%;
+
+    /* Tech accent - bright cyan */
+    --accent: 180 100% 50%;
+    --accent-foreground: 0 0% 4%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Borders with neon glow */
+    --border: 0 0% 15%;
+    --border-glow: 142 71% 45% / 0.3;
+    --input: 0 0% 12%;
+    --ring: 142 71% 45%;
+
+    --radius: 0.5rem;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(142 71% 10%) 0%, hsl(0 0% 4%) 50%, hsl(180 71% 10%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 8%) 0%, hsl(0 0% 5%) 100%);
+    --gradient-neon: linear-gradient(135deg, hsl(142 71% 45%) 0%, hsl(180 100% 40%) 100%);
+    
+    /* Glows and shadows */
+    --glow-primary: 0 0 20px hsl(142 71% 45% / 0.5), 0 0 40px hsl(142 71% 45% / 0.3);
+    --glow-accent: 0 0 20px hsl(180 100% 50% / 0.5);
+    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.5);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+
+  code, pre, .mono {
+    font-family: 'Space Mono', monospace;
+  }
+  
+  /* Smooth scrolling with offset for fixed nav */
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Hero text with neon glow */
+  .hero-text {
+    @apply text-primary font-bold;
+    text-shadow: var(--glow-primary);
+    font-family: 'Space Mono', monospace;
+  }
+
+  /* Glowing card with hover effect */
+  .glow-card {
+    @apply bg-card border border-border rounded-lg p-6 transition-all duration-300;
+    box-shadow: var(--shadow-card);
+  }
+  
+  .glow-card:hover {
+    @apply border-primary/50;
+    box-shadow: var(--glow-primary), var(--shadow-card);
+  }
+
+  /* Tech section divider */
+  .section-divider {
+    @apply w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent;
+  }
+
+  /* Neon button */
+  .neon-link {
+    @apply text-primary hover:text-primary-glow transition-colors duration-300 relative;
+  }
+  
+  .neon-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 transition-transform duration-300 origin-left;
+  }
+  
+  .neon-link:hover::after {
+    @apply scale-x-100;
+  }
+
+  /* Timeline connector */
+  .timeline-line {
+    @apply absolute left-0 top-0 w-0.5 h-full bg-gradient-to-b from-primary via-accent to-transparent;
+  }
+
+  /* Skill bar with glow */
+  .skill-bar {
+    @apply h-2 rounded-full bg-muted overflow-hidden relative;
+  }
+  
+  .skill-bar-fill {
+    @apply h-full rounded-full transition-all duration-1000 ease-out;
+    background: var(--gradient-neon);
+    box-shadow: var(--glow-primary);
+  }
+
+  /* Badge/chip */
+  .tech-badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary text-sm font-medium;
+  }
+
+  /* Matrix background effect */
+  .matrix-bg {
+    @apply relative overflow-hidden;
+  }
+  
+  .matrix-bg::before {
+    content: '';
+    @apply absolute inset-0 opacity-5;
+    background-image: 
+      linear-gradient(90deg, hsl(142 71% 45% / 0.1) 1px, transparent 1px),
+      linear-gradient(hsl(142 71% 45% / 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
