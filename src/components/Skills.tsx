@@ -5,56 +5,61 @@ const skillCategories = [
     title: "Web / API / Mobile Security",
     icon: Globe,
     skills: [
-      { name: "OWASP Top 10", level: 95 },
+      { name: "Web Application Security", level: 95 },
       { name: "API Testing", level: 90 },
-      { name: "Mobile App Security", level: 85 },
-      { name: "Authentication Bypass", level: 92 },
+      { name: "Andorid", level: 85 },
+      { name: "IOS", level: 80 },
     ],
   },
   {
+
+
+
     title: "Active Directory",
     icon: Server,
     skills: [
-      { name: "AD Enumeration", level: 88 },
-      { name: "Privilege Escalation", level: 85 },
-      { name: "Kerberoasting", level: 80 },
-      { name: "Lateral Movement", level: 82 },
+      { name: "    Active Directory Attacks", level: 88 },
+      { name: "Abusing AD Misconfigurations", level: 85 },
+      { name: "Pivoting & Lateral Movement", level: 80 },
+      { name: "Command and Control (C2) Operations", level: 82 },
     ],
   },
+  // {
+  //   title: "Network Security",
+  //   icon: Network,
+  //   skills: [
+  //     { name: "Network Scanning", level: 90 },
+  //     { name: "Vulnerability Assessment", level: 92 },
+  //     { name: "Exploitation", level: 88 },
+  //     { name: "Post-Exploitation", level: 85 },
+  //   ],
+  // },
   {
-    title: "Network Security",
-    icon: Network,
-    skills: [
-      { name: "Network Scanning", level: 90 },
-      { name: "Vulnerability Assessment", level: 92 },
-      { name: "Exploitation", level: 88 },
-      { name: "Post-Exploitation", level: 85 },
-    ],
-  },
-  {
+
     title: "Source Code Review",
     icon: Code,
     skills: [
       { name: "Static Analysis", level: 85 },
-      { name: "Secure Code Patterns", level: 80 },
-      { name: "Logic Flaws", level: 88 },
-      { name: "Injection Flaws", level: 90 },
+      { name: "Dynamic Analysis", level: 80 },
+      { name: "Large code base security reviews", level: 88 },
+      { name: "Web exploit development", level: 90 },
     ],
   },
   {
-    title: "Tooling & Frameworks",
+        title: "Tooling & Frameworks",
     icon: Wrench,
     tools: [
       "Burp Suite Pro",
-      "Metasploit",
-      "Nmap",
+      "Postman",
+      "Android Studio",
       "Wireshark",
-      "SQLMap",
-      "OWASP ZAP",
-      "Nikto",
-      "Gobuster",
+      "NetExec",
       "Bloodhound",
-      "Impacket",
+      "Tenable Nessus®",
+      "Cobalt Strike",
+      "Sliver C2",
+      "Ghidra",
+      "IDA Pro",
     ],
   },
 ];
@@ -73,7 +78,7 @@ export const Skills = () => {
           </div>
 
           {/* Skills Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {skillCategories.map((category, index) => (
               <div
                 key={index}

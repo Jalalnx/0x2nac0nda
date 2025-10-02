@@ -200,7 +200,6 @@ Suggestions and improvements welcome! Open an issue or submit a pull request.
 
 **Abdalla Abdelrhman Mubarak**
 - Email: abdallaabdalrhman629@gmail.com
-- Phone: +966 562 378 069
 - Location: Riyadh, Saudi Arabia
 - GitHub: [@0x2nac0nda](https://github.com/0x2nac0nda)
 - HackerOne: [0x2nac0nda](https://hackerone.com/0x2nac0nda)

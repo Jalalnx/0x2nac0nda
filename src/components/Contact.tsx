@@ -73,16 +73,7 @@ export const Contact = () => {
                     </div>
                   </a>
 
-                  <a
-                    href="tel:+966562378069"
-                    className="flex items-start gap-3 text-foreground/80 hover:text-primary transition-colors group"
-                  >
-                    <Phone className="w-5 h-5 text-primary mt-0.5 group-hover:scale-110 transition-transform" />
-                    <div>
-                      <p className="text-sm text-muted-foreground">Phone</p>
-                      <p className="text-sm">+966 562 378 069</p>
-                    </div>
-                  </a>
+                  
 
                   <div className="flex items-start gap-3 text-foreground/80">
                     <MapPin className="w-5 h-5 text-primary mt-0.5" />
@@ -108,7 +99,7 @@ export const Contact = () => {
                       <Linkedin size={24} />
                     </a>
                     <a
-                      href="https://github.com/0x2nac0nda"
+                      href="https://github.com/abdallaabdalrhman"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors"

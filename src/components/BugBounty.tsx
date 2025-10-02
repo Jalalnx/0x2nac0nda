@@ -150,16 +150,7 @@ export const BugBounty = () => {
 
           {/* Links to Profiles */}
           <div className="mt-12 text-center space-x-4 animate-fade-in-up">
-            <Button variant="hero" asChild>
-              <a
-                href="https://hackerone.com/0x2nac0nda"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View HackerOne Profile
-                <ExternalLink className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
+            
             <Button variant="outline" asChild>
               <a
                 href="https://twitter.com/0x2nac0nda"

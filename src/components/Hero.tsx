@@ -71,9 +71,7 @@ export const Hero = () => {
               abdallaabdalrhman629@gmail.com
             </a>
             <span className="hidden md:inline">·</span>
-            <a href="tel:+966562378069" className="neon-link hover:text-primary">
-              +966 562 378 069
-            </a>
+          
           </div>
 
           {/* Terminal Role Cycler */}
@@ -130,15 +128,7 @@ export const Hero = () => {
             >
               <Twitter size={24} />
             </a>
-            <a
-              href="https://hackerone.com/0x2nac0nda"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors mono text-sm font-semibold"
-              aria-label="HackerOne"
-            >
-              H1
-            </a>
+           
           </div>
 
           {/* Scroll Indicator */}
