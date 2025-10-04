@@ -1,6 +1,7 @@
 import { Award, ExternalLink, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { PDFViewer } from "./PDFViewer";
 
 
 
@@ -183,11 +184,13 @@ export const Certificates = () => {
                     sandbox="allow-scripts allow-same-origin"
                   /> */}
 
-                  <iframe
+                  {/* <iframe
                     src={`https://docs.google.com/gview?url=${window.location.origin}/certificates/${selectedCert}#toolbar=0&embedded=true`}
                     className="w-full h-[80vh] rounded-2xl border-none"
                     title="Certificate Viewer"
-                  />
+                  /> */}
+
+                  <PDFViewer file={`${selectedCert}`} />
                 </div>
               </div>
             </div>
