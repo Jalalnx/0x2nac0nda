@@ -3,60 +3,47 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "Custom VAPT Framework",
+    title: "OSWE-Preparation-Tudo",
     description:
-      "A modular Python-based framework for automating common penetration testing tasks including reconnaissance, vulnerability scanning, and reporting.",
-    tech: ["Python", "Nmap", "SQLMap", "Metasploit"],
-    githubUrl: "https://github.com/0x2nac0nda",
+      "This is an intentionally vulnerable web application. There are 3 steps to complete the challenge and multiple ways to complete each step.",
+    tech: ["Python", "Deserialization", "File Upload", "SSTI"],
+    githubUrl: "https://github.com/abdallaabdalrhman/OSWE-Preparation-Tudo",
     writeupUrl: "#",
     stars: 245,
-  },
-  {
-    title: "Web App Security Scanner",
+  }, 
+
+    {
+    title: "Blind SQL injection with conditional responses",
     description:
-      "Automated web application security scanner that identifies OWASP Top 10 vulnerabilities. Includes custom detection rules and comprehensive reporting.",
-    tech: ["Python", "BeautifulSoup", "Requests", "SQLite"],
-    githubUrl: "https://github.com/0x2nac0nda",
+      "TThe results of the SQL query are not returned, and no error messages are displayed. But the application includes a “Welcome back” message in the page if the query returns any rows.",
+    tech: ["Burp", "SQL Injection", "Blind SQL injection"],
+    githubUrl: "https://medium.com/@0x2nac0nda/blind-sql-injection-with-conditional-responses-d548b6c01181",
     writeupUrl: "#",
-    stars: 189,
-  },
-  {
-    title: "Active Directory Toolkit",
+    stars: 245,
+  }, 
+
+
+    {
+    title: "Forensic Challenge at BlackHat MEA Qualification",
     description:
-      "Collection of PowerShell and Python scripts for AD enumeration, privilege escalation, and lateral movement during red team engagements.",
-    tech: ["PowerShell", "Python", "Impacket", "BloodHound"],
-    githubUrl: "https://github.com/0x2nac0nda",
+      "My work PC has suddenly crashed. I can no longer retrieve my secret file, also I don’t remember the password. It is a hard password and securely generated, but i saved it locally. Can you help me recover the content?",
+    tech: ["Volatility", "Digital forensics", "Memory Forensics"],
+    githubUrl: "https://medium.com/@0x2nac0nda/forensic-challenge-at-blackhat-mea-qualification-7f01d23ba74b",
     writeupUrl: "#",
-    stars: 312,
-  },
+    stars: 245,
+  }, 
+
   {
-    title: "CTF Writeup Collection",
+    title: "First Bug in Bugcrowd Using Github Dork",
     description:
-      "Comprehensive collection of CTF challenge writeups covering web, crypto, reversing, pwn, and forensics categories from various competitions.",
-    tech: ["Markdown", "Python", "Bash"],
-    githubUrl: "https://github.com/0x2nac0nda/ctf-writeups",
+      "Exposed API keys and secrets in public GitHub repository discovered via GitHub dork - User names , Passwords , Emails , Token , Secret key , backup file , and More",
+    tech: ["GitHub", "Sensitive Information", "Github dorks"],
+    githubUrl: "https://medium.com/@0x2nac0nda/first-bug-in-bugcrowd-using-github-dork-ef8c42944c26",
     writeupUrl: "#",
-    stars: 567,
-  },
-  {
-    title: "Security Training Labs",
-    description:
-      "Docker-based vulnerable web applications and infrastructure for hands-on security training. Includes guided labs and solutions.",
-    tech: ["Docker", "PHP", "MySQL", "JavaScript"],
-    githubUrl: "https://github.com/0x2nac0nda",
-    writeupUrl: "#",
-    stars: 423,
-  },
-  {
-    title: "API Fuzzer Tool",
-    description:
-      "Intelligent API fuzzing tool that automatically discovers endpoints, generates test cases, and identifies security vulnerabilities in REST APIs.",
-    tech: ["Python", "FastAPI", "MongoDB", "Redis"],
-    githubUrl: "https://github.com/0x2nac0nda",
-    writeupUrl: "#",
-    stars: 198,
-  },
-];
+    stars: 245,
+  }, 
+
+]
 
 export const Projects = () => {
   return (
@@ -142,7 +129,7 @@ export const Projects = () => {
           </div>
 
           {/* GitHub Link */}
-          <div className="mt-12 text-center animate-fade-in-up">
+          {/* <div className="mt-12 text-center animate-fade-in-up">
             <Button variant="hero" size="lg" asChild>
               <a
                 href="https://github.com/0x2nac0nda"
@@ -154,7 +141,7 @@ export const Projects = () => {
                 <ExternalLink className="ml-2 h-4 w-4" />
               </a>
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

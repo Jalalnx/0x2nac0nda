@@ -39,14 +39,6 @@ export const Footer = () => {
               </a>
             </div>
           </div>
-
-          {/* Bottom: Privacy Note */}
-          <div className="mt-8 pt-6 border-t border-border text-center">
-            <p className="text-xs text-muted-foreground">
-              This portfolio is built with React, TypeScript, Tailwind CSS, and deployed
-              on GitHub Pages.
-            </p>
-          </div>
         </div>
       </div>
     </footer>

@@ -117,31 +117,13 @@ export const CTF = () => {
                             {event.rank}
                           </span>
                         </span>
-                        <span>•</span>
-                        <span>Team: {event.team}</span>
-                        <span>•</span>
-                        <span className="mono text-accent">
-                          {event.points} pts
-                        </span>
+                       
+                       
                       </div>
                       <p className="mt-4 text-foreground/80">{event.description}</p>
                     </div>
 
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="hover:border-primary hover:text-primary"
-                      asChild
-                    >
-                      <a
-                        href={event.writeupUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Writeup
-                        <ExternalLink className="ml-2 h-3 w-3" />
-                      </a>
-                    </Button>
+                   
                   </div>
                 </div>
               ))}

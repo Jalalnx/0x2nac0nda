@@ -20,7 +20,6 @@ const Index = () => {
       <Experience />
       <Certificates />
       <CTF />
-      <BugBounty />
       <Projects />
       <Contact />
       <Footer />

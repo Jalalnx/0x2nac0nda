@@ -6,7 +6,7 @@ const experiences =
     "title": "Cyber Security Consultant",
     "company": "New Solutions",
     "location": "Riyadh, Saudi Arabia",
-    "period": "Aug 2024 – Present",
+    "period": " – August 2024 to August 2025",
     "type": "consulting",
     "description": "Perform various penetration testing services across web, API, mobile (iOS & Android), network, and Active Directory. Responsible for producing detailed security assessment reports.",
     "achievements": [
