@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "pdfjs-dist/web/pdf_viewer.css";
 
 
@@ -11,6 +11,33 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
 
 export const PDFViewer = ({ file }) => {
   const containerRef = useRef(null);
+  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+
+  useEffect(() => {
+    const updateDimensions = () => {
+      if (containerRef.current) {
+        setDimensions({
+          width: containerRef.current.offsetWidth,
+          height: containerRef.current.offsetHeight,
+        });
+      }
+    };
+
+    updateDimensions(); // Initial size
+
+    // Observe resize dynamically
+    const resizeObserver = new ResizeObserver(() => {
+      updateDimensions();
+    });
+
+    if (containerRef.current) {
+      resizeObserver.observe(containerRef.current);
+    }
+
+    return () => {
+      resizeObserver.disconnect();
+    };
+  }, []);
 
   useEffect(() => {
     const loadPDF = async () => {
@@ -27,15 +54,30 @@ export const PDFViewer = ({ file }) => {
       containerRef.current.appendChild(canvas);
         page.render({ canvasContext: context, canvas, viewport });
        };
-    loadPDF();
+    
+
+    try {
+     loadPDF();
+    } catch (e) {
+      if (e) {
+        console.error("Failed to load PDF due to invalid structure:", e.message);
+        // Display an error message to the user or take other appropriate action
+      } else {
+        // Handle other potential errors
+        console.error("An unexpected error occurred:", e);
+      }
+    }
   }, [file]);
 
   return (
     <div
       ref={containerRef}
       onContextMenu={(e) => e.preventDefault()}
-      className="select-none overflow-auto"
-      style={{ width: "100%", height: "80vh" }}
+      className="overflow-auto w-full h-full"
+       style={{
+        width: `${dimensions.width}px`,
+        height: `${dimensions.height}px`,
+      }}
     />
   );
 };
