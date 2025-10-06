@@ -116,15 +116,6 @@ export const Contact = () => {
                     >
                       <Twitter size={24} />
                     </a>
-                    <a
-                      href="https://hackerone.com/0x2nac0nda"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors mono text-sm font-semibold"
-                      aria-label="HackerOne"
-                    >
-                      H1
-                    </a>
                   </div>
                 </div>
               </div>

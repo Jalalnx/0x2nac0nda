@@ -107,7 +107,7 @@ export const Hero = () => {
           {/* Social Links */}
           <div className="flex items-center justify-center gap-6 pt-4">
             <a
-              href="https://linkedin.com/in/abdalla-mubarak"
+              href="https://www.linkedin.com/in/0x2nac0nda/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -116,7 +116,7 @@ export const Hero = () => {
               <Linkedin size={24} />
             </a>
             <a
-              href="https://github.com/0x2nac0nda"
+              href="https://github.com/abdallaabdalrhman"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
