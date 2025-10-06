@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Download, Mail, Linkedin, Github, Twitter } from "lucide-react";
+import { Download, Mail, Linkedin, Github, Twitter, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SnakeAnimation } from "./SnakeAnimation";
 
@@ -88,11 +88,16 @@ export const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Button variant="hero" size="lg" asChild>
-              <a href="/cv.pdf" download>
-                <Download className="mr-2 h-5 w-5" />
-                Download CV
+              <a 
+                href="/cv.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Eye className="mr-2 h-5 w-5" />
+                Preview CV
               </a>
             </Button>
+
             <Button variant="heroOutline" size="lg" onClick={scrollToContact}>
               <Mail className="mr-2 h-5 w-5" />
               Contact
