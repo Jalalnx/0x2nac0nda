@@ -12,7 +12,7 @@ const certificates = [
     "issuer": "Offensive Security",
     "year": "2023",
     "id": "WEB-300",
-    "url": "/0x2nac0nda/certificates/OSWE.pdf",
+    "url": "/certificates/OSWE.pdf",
     "icon": "🌐",
     "description": "Completed WEB-300 (Advanced Web Attacks and Exploitation), demonstrating deep expertise in identifying and exploiting complex web application vulnerabilities."
   },
@@ -22,7 +22,7 @@ const certificates = [
     "issuer": "eLearnSecurity (INE)",
     "year": "2022",
     "id": "",
-    "url": "/0x2nac0nda/certificates/eWPTXv2 Certification - eLearnSecurity Web Application Penetration Tester eXtreme v2.pdf",
+    "url": "/certificates/eWPTXv2 Certification - eLearnSecurity Web Application Penetration Tester eXtreme v2.pdf",
     "icon": "💻",
     "description": "Earned the eWPTX certification, validating advanced skills in web application penetration testing and exploitation techniques."
   },
@@ -32,7 +32,7 @@ const certificates = [
     "issuer": "eLearnSecurity (INE)",
     "year": "2022",
     "id": "",
-    "url": "/0x2nac0nda/certificates/eMAPT Certification - eLearnSecurity Mobile Application Penetration Tester.pdf",
+    "url": "/certificates/eMAPT Certification - eLearnSecurity Mobile Application Penetration Tester.pdf",
     "icon": "📱",
     "description": "Completed eMAPT, demonstrating expertise in mobile application security assessments for Android and iOS platforms."
   },
@@ -42,7 +42,7 @@ const certificates = [
     "issuer": "Hack The Box",
     "year": "2022",
     "id": "",
-    "url": "/0x2nac0nda/certificates/Dante.pdf",
+    "url": "/certificates/Dante.pdf",
     "icon": "🕹️",
     "description": "Solved the HTB Dante challenge — a complex lab emphasizing lateral movement, pivoting, and realistic enterprise red team scenarios."
   },
@@ -52,7 +52,7 @@ const certificates = [
     "issuer": "Hack The Box",
     "year": "2023",
     "id": "",
-    "url": "/0x2nac0nda/certificates/Zephyr.pdf",
+    "url": "/certificates/Zephyr.pdf",
     "icon": "🕹️",
     "description": "Completed HTB Zephyr — focused on Active Directory exploitation, post-exploitation techniques, and privilege escalation in complex environments."
   },
@@ -62,7 +62,7 @@ const certificates = [
     "issuer": "Hack The Box",
     "year": "2023",
     "id": "",
-    "url": "/0x2nac0nda/certificates/RastaLabs.pdf",
+    "url": "/certificates/RastaLabs.pdf",
     "icon": "🕹️",
     "description": "Completed HTB Rastalabs — an advanced lab covering persistence, stealthy operations, and domain-wide compromise in Windows networks."
   },
@@ -72,7 +72,7 @@ const certificates = [
     "issuer": "Hack The Box",
     "year": "2024",
     "id": "",
-    "url": "/0x2nac0nda/certificates/Offshore.pdf",
+    "url": "/certificates/Offshore.pdf",
     "icon": "🕹️",
     "description": "Completed HTB Offshore — simulating segmented enterprise networks with VPN, web exploitation, and complex AD pivoting scenarios."
   },
@@ -82,7 +82,7 @@ const certificates = [
     "issuer": "Hack The Box",
     "year": "2024",
     "id": "",
-    "url": "/0x2nac0nda/certificates/Cybernetics.pdf",
+    "url": "/certificates/Cybernetics.pdf",
     "icon": "🕹️",
     "description": "Completed HTB Cybernetics — advanced network exploitation and red team tactics across hybrid cloud and on-prem infrastructures."
   }
